@@ -6,7 +6,7 @@ pipeline {
         // ===== FRONTEND BUILD =====
         stage('Build Frontend') {
             steps {
-                dir('LISTFRONTEND') {
+                dir('FRONTEND') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
